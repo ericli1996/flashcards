@@ -7,16 +7,20 @@ const Deck = require('../src/Deck');
 const Round = require('../src/Round');
 
 
-describe('Game', function() {
+describe('Game', () => {
 
-  it('should be a function', function() {
-    const game = new Game();
+  let game;
+
+  beforeEach(() => {
+    game = new Game();
+  });
+
+  it('should be a function', () => {
 
     expect(Game).to.be.a('function');
   });
 
-  it('should keep track of the current round and start off with no rounds', function() {
-    const game = new Game();
+  it('should keep track of the current round and start off with no rounds', () => {
 
     expect(game.currentRound).to.equal(null);
   });
