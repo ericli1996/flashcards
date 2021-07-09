@@ -9,7 +9,7 @@ describe('Card', () => {
 
   beforeEach(() => {
     card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
-  })
+  });
 
   it('should be a function', () => {
 
