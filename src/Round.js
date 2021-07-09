@@ -9,11 +9,7 @@ class Round {
   }
 
   returnCurrentCard() {
-    if (this.turns >= this.deck.length) {
-      return false;
-    } else {
-      return this.currentCard;
-    }
+    return this.currentCard;
   }
 
   takeTurn(guess) {
